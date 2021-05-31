@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+  color: $color-white-input;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 3px;
+  font-family: $font-family;
+  background: none;
+  border: none;
+}
+
+.button--cancel {
+  background: rgba($color-black-two, 0.4);
+}
+
+.button--primary {
+  background: $color-blue;
+}
+
+.button--link {
+  padding: 0;
+  color: $color-greyish;
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background: $color-greyish-brown;
+}

@@ -1,0 +1,9 @@
+.header {
+  padding-top: 46px;
+  padding-bottom: 30px;
+  @include separator();
+
+  @media (min-width: $desktop) {
+    padding-top: 114px;
+  }
+}

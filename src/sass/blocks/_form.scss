@@ -1,0 +1,96 @@
+.form {
+  margin-top: 29px;
+}
+
+.form__form {
+  padding-top: 23px;
+}
+
+.form__group + .form__group {
+  margin-top: 23px;
+}
+
+.form__group--buttons {
+  margin-top: 13px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.form__label {
+  display: block;
+  font-size: 13px;
+  color: $color-greyish;
+  margin-bottom: 7px;
+}
+
+.form__input-container {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 16px;
+  color: $color-white-input;
+  background-color: $color-greyish-brown;
+  padding: 11px 7px 7px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.form__button-input {
+  position: absolute;
+  height: 100%;
+  right: 15px;
+  border: none;
+  color: $color-greyish;
+  font-size: 12px;
+  background: transparent;
+  padding: 0;
+}
+
+.form__input:focus {
+  border: 1px solid $color-grey-border;
+  background-color: $color-grey-input;
+  outline: none;
+}
+
+.form__input--light {
+  border: solid 1px #ccc;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.form__input--light:focus {
+  color: $color-white-input
+}
+
+@media (min-width: $desktop) {
+  .form {
+    margin-top: 31px;
+    @include separator()
+  }
+
+  .form__form {
+    padding-top: 17px;
+    padding-bottom: 33px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .form__input {
+    padding: 12px 7px;
+  }
+
+  .form__group + .form__group {
+    margin-top: 17px;
+  }
+
+  .form__group + .form__group--buttons {
+    margin-top: 22px;
+  }
+}
